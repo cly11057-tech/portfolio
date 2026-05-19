@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小cy的定制开发工作室</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; }
+  .hero-bg { background: linear-gradient(135deg, #1677ff 0%, #0050d0 100%); }
+  .card-hover { transition: transform .2s, box-shadow .2s; }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.12); }
+  .tag { display:inline-block; padding:2px 10px; border-radius:20px; font-size:12px; font-weight:600; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+  .fade-up { animation: fadeUp .6s ease both; }
+  .fade-up-2 { animation: fadeUp .6s .15s ease both; }
+  .fade-up-3 { animation: fadeUp .6s .3s ease both; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Hero -->
+<div class="hero-bg text-white px-5 pt-16 pb-12 text-center">
+  <div class="fade-up">
+    <div class="text-5xl mb-3">⚡</div>
+    <h1 class="text-2xl font-bold mb-2">小cy的定制开发工作室</h1>
+    <p class="text-blue-100 text-sm leading-relaxed">H5页面 · 小工具 · 自动化脚本<br>说清楚需求，当天出稿</p>
+  </div>
+  <div class="fade-up-2 mt-6 flex justify-center gap-3 flex-wrap">
+    <span class="bg-white bg-opacity-20 rounded-full px-4 py-1 text-sm">⚡ 当天交付</span>
+    <span class="bg-white bg-opacity-20 rounded-full px-4 py-1 text-sm">✅ 满意付款</span>
+    <span class="bg-white bg-opacity-20 rounded-full px-4 py-1 text-sm">🔧 免费改2次</span>
+  </div>
+</div>
+
+<!-- 服务项目 -->
+<div class="px-4 py-8">
+  <h2 class="text-lg font-bold text-center mb-5 fade-up-3">我能做什么</h2>
+  <div class="grid grid-cols-1 gap-4 max-w-lg mx-auto">
+
+    <div class="bg-white rounded-2xl p-5 card-hover shadow-sm">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-xl">📱</div>
+        <div>
+          <div class="font-bold">H5 活动页 / 宣传页</div>
+          <div class="text-xs text-gray-400">微信分享直接打开</div>
+        </div>
+        <div class="ml-auto text-blue-600 font-bold text-sm">99元起</div>
+      </div>
+      <p class="text-sm text-gray-500 leading-relaxed">活动宣传、企业介绍、邀请函、招募报名页，带动画效果，手机完美显示</p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-5 card-hover shadow-sm">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center text-xl">🛠️</div>
+        <div>
+          <div class="font-bold">小工具 / 管理系统</div>
+          <div class="text-xs text-gray-400">多人实时同步，无需安装APP</div>
+        </div>
+        <div class="ml-auto text-green-600 font-bold text-sm">300元起</div>
+      </div>
+      <p class="text-sm text-gray-500 leading-relaxed">抽奖、投票、签到、排班、轮接系统、报名收集等，发链接即可用</p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-5 card-hover shadow-sm">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-xl">⚙️</div>
+        <div>
+          <div class="font-bold">自动化脚本</div>
+          <div class="text-xs text-gray-400">重复工作一键完成</div>
+        </div>
+        <div class="ml-auto text-purple-600 font-bold text-sm">200元起</div>
+      </div>
+      <p class="text-sm text-gray-500 leading-relaxed">Excel批处理、数据整理、批量重命名、自动生成报表、数据采集</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- 案例 -->
+<div class="px-4 pb-8">
+  <h2 class="text-lg font-bold text-center mb-5">真实案例</h2>
+  <div class="flex flex-col gap-4 max-w-lg mx-auto">
+
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
+      <div class="h-24 flex items-center justify-center text-4xl"
+           style="background:linear-gradient(135deg,#1677ff,#0050d0)">📊</div>
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="font-bold text-sm">销售轮接管理系统</span>
+          <span class="tag bg-green-100 text-green-700">已上线</span>
+        </div>
+        <p class="text-xs text-gray-500 leading-relaxed">5人销售团队实时轮接，Firebase同步，多设备共享数据，自动按业绩排队，管理员后台一键管理</p>
+        <div class="mt-3 flex gap-2">
+          <span class="tag bg-blue-50 text-blue-600">实时同步</span>
+          <span class="tag bg-blue-50 text-blue-600">多设备</span>
+          <span class="tag bg-blue-50 text-blue-600">权限管理</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
+      <div class="h-24 flex items-center justify-center text-4xl"
+           style="background:linear-gradient(135deg,#fa8c16,#d46b08)">🎬</div>
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="font-bold text-sm">品牌宣传片展示页</span>
+          <span class="tag bg-green-100 text-green-700">已交付</span>
+        </div>
+        <p class="text-xs text-gray-500 leading-relaxed">养老社区品牌形象H5，27个场景自动播放，Ken Burns镜头动效，章节导航，配文朗读</p>
+        <div class="mt-3 flex gap-2">
+          <span class="tag bg-orange-50 text-orange-600">全屏动效</span>
+          <span class="tag bg-orange-50 text-orange-600">自动播放</span>
+          <span class="tag bg-orange-50 text-orange-600">章节跳转</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
+      <div class="h-24 flex items-center justify-center text-4xl"
+           style="background:linear-gradient(135deg,#52c41a,#237804)">📋</div>
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="font-bold text-sm">活动报名 + 数据收集</span>
+          <span class="tag bg-blue-100 text-blue-700">可定制</span>
+        </div>
+        <p class="text-xs text-gray-500 leading-relaxed">报名表单、实时名单统计、自动去重、支持导出，微信分享一键传播</p>
+        <div class="mt-3 flex gap-2">
+          <span class="tag bg-green-50 text-green-600">表单收集</span>
+          <span class="tag bg-green-50 text-green-600">实时统计</span>
+          <span class="tag bg-green-50 text-green-600">可导出</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 流程 -->
+<div class="px-4 pb-8 max-w-lg mx-auto">
+  <h2 class="text-lg font-bold text-center mb-5">合作流程</h2>
+  <div class="bg-white rounded-2xl p-5 shadow-sm">
+    <div class="flex flex-col gap-4">
+      <div class="flex gap-4 items-start">
+        <div class="w-7 h-7 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5">1</div>
+        <div><div class="font-semibold text-sm">说清楚需求</div><div class="text-xs text-gray-400 mt-0.5">描述你想要什么效果，越详细越好，有参考图更好</div></div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-7 h-7 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5">2</div>
+        <div><div class="font-semibold text-sm">确认报价</div><div class="text-xs text-gray-400 mt-0.5">免费评估，告知价格和交付时间，确认后开工</div></div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-7 h-7 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5">3</div>
+        <div><div class="font-semibold text-sm">当天出稿</div><div class="text-xs text-gray-400 mt-0.5">发给你预览链接，免费修改2次直到满意</div></div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="w-7 h-7 rounded-full bg-blue-500 text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5">4</div>
+        <div><div class="font-semibold text-sm">满意再付款</div><div class="text-xs text-gray-400 mt-0.5">确认没问题后付款，交付完整源码</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 联系 -->
+<div class="px-4 pb-12 max-w-lg mx-auto">
+  <div class="bg-blue-600 text-white rounded-2xl p-6 text-center">
+    <div class="text-2xl mb-2">💬</div>
+    <div class="font-bold text-lg mb-1">有需求？直接联系</div>
+    <div class="text-blue-100 text-sm mb-4">说清楚要做什么，免费评估报价</div>
+    <div class="bg-white bg-opacity-20 rounded-xl p-3 text-sm">
+      微信：<span class="font-bold">【你的微信号】</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
